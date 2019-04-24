@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
+
 var engine = Vue.prototype.$engine;
 var G = Vue.prototype.$global;
+
 //---- setup dir and config ----//
 var boardDirectory = `${engine.util.boardDir}/${G.board.board}`;
 var pluginDir = `${boardDirectory}/plugin`;
@@ -13,9 +15,6 @@ var config = require('./config');
 var platformDir = `${engine.util.platformDir}/${config.platform}`;
 var platformCompiler = engine.util.requireFunc(`${platformDir}/compiler`);
 
-function is_not_null(val) {
-    return (!((val == null) || (typeof (val) == 'undefined')));
-}
 
 function compile(rawCode,boardName,config,cb)
 {
@@ -64,7 +63,7 @@ function compile(rawCode,boardName,config,cb)
         };
         var sourceFiles = inc_src;
         var includeSwitch = inc_switch;
-        sourceFiles.push(`${app_dir}/user_app.cpp`);        
+        sourceFiles.push(`${app_dir}/user_app.cpp`);
         platformCompiler.setConfig(contextBoard);        
         //(sources, boardCppOptions, boardcflags, plugins_includes_switch -Ixxx/xxx)
         engine.util.promiseTimeout(1000).then(()=>{

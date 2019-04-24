@@ -1,12 +1,12 @@
 module.exports = {    
-    name : 'kbpro',
+    name : 'esp32-wrover',
     platform : 'arduino-esp32',
-    title : 'KB-Pro',
-    description : 'KB-Pro board for learn programming for everyone. บอร์ดสำหรับเรียนรู้การเขียนโปรแกรมสำหรับโปร มาพร้อมความสามารถที่มากขึ้น เช่น \n - หน่วยความจำ 4mb \n เซ็นเซอร์ Accerelometer Gyro meter\n',
-    author : 'Maker Asia',
-    website : 'http://www.kbpro.org',
+    title : 'Generic ESP32 Wrover',
+    description : 'ESP32-Wrover development board with extra RAM.\n',
+    author : 'Comdet Phueadphut',
+    website : 'https://docs.espressif.com/projects/esp-idf/en/latest/get-started/get-started-wrover-kit.html',
     email : 'comdet.p@gmail.com',
-    git : 'https://github.com/makerasia/kbpro/',    
-    image : '/static/display.jpg',    
-    version : '1.0.0'
+    git : 'https://github.com/comdet/generic-esp32-wrover/',
+    image : '/static/display.jpg',
+    version : '1.0.1'
 };
