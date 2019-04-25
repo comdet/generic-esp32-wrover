@@ -8,5 +8,5 @@ module.exports = {
     email : 'comdet.p@gmail.com',
     git : 'https://github.com/comdet/generic-esp32-wrover/',
     image : '/static/display.jpg',
-    version : '1.0.2'
+    version : '1.0.3'
 };
