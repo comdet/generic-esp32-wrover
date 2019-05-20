@@ -11,7 +11,8 @@ using namespace std;
 
 KBProTime kbprotime;
 BluetoothSerial SerialBT;
-
+typedef int Number;
+typedef int Boolean;
 ${VARIABLE}
 
 ${FUNCTION}
